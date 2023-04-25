@@ -1,0 +1,471 @@
+@import url('https://fonts.cdnfonts.com/css/inknut-antiqua');
+   
+html {
+    background: url("/backgroundImg/19366.jpg")no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: Oswald;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+   /* font-family: 'Inknut Antiqua', sans-serif;*/
+   font-family: Oswald;
+    color: #fefefe;
+}
+
+header {
+    background-color: white;
+    opacity: 70%;
+    font-family: Oswald;
+    text-shadow: 0;
+    width: min(100% - 15px, 1500px);
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.flex {
+    display: flex;
+    height: 80px;
+}
+
+.secondSection {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.grp {
+    color: black;
+    font-size: 120%;
+}
+
+.grp:hover,
+.backHome:hover {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px #fff, 0 0 20px black, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.space {
+    margin-left: 50px;
+}
+
+.firstSection {
+    margin-top: 20px ;
+    margin-left: 80px;
+    margin-right: 600px;
+}
+
+.backHome {
+    color: #407AA4;
+    font-size: 160%;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.inDescription {
+    font-size: 35px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.container {
+    position : relative;
+    width: 320px;
+    margin: 50px auto 0 auto;
+    perspective: 1500px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.imageCar {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+    font-style: Oswald;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px black, 0 0 30px #fff, 0 0 35px black;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.imageCar:nth-child(1) {
+    background-image: url("/ProjectsImg/Piscine.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imageCar:nth-child(2) {
+    background-image: url("/ProjectsImg/EPERSOULS.png");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imageCar:nth-child(3) {
+    background-image: url("/ProjectsImg/HangmanTerminal.png");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imageCar:nth-child(4) {
+    background-image: url("/ProjectsImg/FondConjuring.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imageCar:nth-child(5) {
+    background-image: url("/ProjectsImg/Tamagochi\ X\ Pokemon.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imageCar:nth-child(6) {
+    background-image: url("/ProjectsImg/NapsterGroupieTracker.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imageCar:nth-child(7) {
+    background-image: url("/ProjectsImg/WebScraping.png");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imageCar:nth-child(8) {
+    background-image: url("/ProjectsImg/LearningComputerScience.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imageCar:nth-child(9) {
+    background-image: url("/ProjectsImg/Writing.jpg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+.descr {
+    margin-top: 400px;
+}
+
+section {
+    border-bottom: #407AA4 solid;
+    text-shadow: 0 0 5px black, 0 0 10px white, 0 0 15px #fff, 0 0 20px black, 0 0 25px white, 0 0 30px #fff, 0 0 35px black;
+}
+
+.image0 {
+    background-image: url("/ProjectsImg/Piscine.jpg");
+    margin-top: -15px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align:center
+}
+
+.image1 {
+    background-image: url("/ProjectsImg/EPERSOULS.png");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.image2 {
+    background-image: url("/ProjectsImg/HangmanTerminal.png");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.image3 {
+    background-image: url("/ProjectsImg/FondConjuring.jpg");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.image4 {
+    background-image: url("/ProjectsImg/Tamagochi\ X\ Pokemon.jpg");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.image5 {
+    background-image: url("/ProjectsImg/NapsterGroupieTracker.jpg");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.image6 {
+    background-image: url("/ProjectsImg/WebScraping.png");
+    margin-top: -20px;
+    height: 496px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+p {
+    bottom: 0px;
+}
+
+.gridContainer {
+    margin-top: 20px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    gap: 20px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px #fff, 0 0 35px black;
+}
+  
+  .wrapper {
+    position: relative;
+    height: 300px;
+    width: 650px;
+    margin: 50px 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
+    transition: all 200ms ease-in-out;
+  }
+  
+  .image-wrapper {
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    transition: all 200ms ease-in-out;
+  }
+  
+  img {
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    object-position: top;
+    
+    transition: all 200ms ease-in-out;
+  }
+  
+  .design-image {
+    object-position: center;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    width: 600px;
+
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+    
+  }
+  
+  h5 {
+    position: relative;
+    bottom: 0;
+    right: 75px;
+    height: 300px;
+    color: #407AA4;
+    font-size: 50px;
+    transition: all 200ms ease-in-out;
+  }
+
+  h4 {
+    position: relative;
+    bottom: -20px;
+    right: 0;
+    height: 250px;
+    color: white;
+    font-size: 85px;
+    font-family: Oswald;
+    transition: all 200ms ease-in-out;
+
+  }
+  
+  .wrapper:hover img {
+    transform: scale(2);
+    /*object-position: bottom;*/
+  }
+  
+  .wrapper:hover h5 {
+    bottom: 300px;
+    transform: scale(.4);
+  }
+
+  .wrapper:hover h4{
+    bottom: 300px;
+    transform: scale(.4);
+  }
+  
+  .wrapper:hover .image-wrapper {
+    width: 800px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}*/   
+
+/*.gridContainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto auto;
+    gap: 40px;
+  }
+
+img {
+    --m:
+      radial-gradient(circle farthest-side at right,#000 99%,#0000) 
+        0 100%/46% 92% no-repeat,
+      radial-gradient(circle farthest-side at left ,#000 99%,#0000) 
+        100% 0/46% 92% no-repeat;
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale(.5);
+    transition: .3s linear;
+    cursor: pointer;
+    width: auto;
+    height: 400px;
+
+}
+
+img:hover {
+    -webkit-mask-position: 7.5% 50%,92.5% 50%;
+            mask-position: 7.5% 50%,92.5% 50%;
+    filter: grayscale(0);
+}
+
+<div class="gridContainer">
+        <img src="/ProjectsImg/Piscine.jpg">
+        <img src="/ProjectsImg/EPERSOULS.png">
+        <img src="/ProjectsImg/HangmanTerminal.png">
+        <img src="/ProjectsImg/FondConjuring.jpg">
+        <img src="/ProjectsImg/Tamagochi X Pokemon.jpg">
+        <img src="/ProjectsImg/NapsterGroupieTracker.jpg">
+        <img src="/ProjectsImg/WebScraping.png">
+    </div>
+
+*/
+
+/*.project {
+    background-color: #407AA4;
+    height: 500px;
+}
+
+<div class="project">
+            <div class="image0">
+                <p>September 2022 : Algorithm</p>
+                <p>Language : Golang</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image1">
+                <div class="info">
+                    <h1>September 2022 : RolePlayGame (RPG)</h1>
+                    <h2>Language : Golang</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image2">
+                <div class="info">
+                    <h1>October 2022 : Hangman (Terminal)</h1>
+                    <h2>Language : Golang</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image3">
+                <div class="info">
+                    <h1>December 2022 : Hangman (Web)</h1>
+                    <h2>Languages : Html/Css/Golang</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image4">
+                <div class="info">
+                    <h1>December 2022 : Tamagotchi X Pokemon</h1>
+                    <h2>Language : Java</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image5">
+                <div class="info">
+                    <h1>March 2023 : Groupie-Tracker</h1>
+                    <h2>Language : Golang (Fyne)</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image6">
+                <div class="info">
+                    <h1>January 2023 : Lab Data</h1>
+                    <h2>Language : Python</h2>
+                </div>
+            </div>
+        </div>
+
+*/
+
+
